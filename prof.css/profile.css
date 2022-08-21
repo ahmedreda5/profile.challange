@@ -1,0 +1,120 @@
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--Darkcyan) ;
+    height: calc(100vh - 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+svg.top{
+    position: absolute;
+    bottom:40% ;
+    right:  52%;
+    z-index: 1;
+}
+
+svg.bottom{
+    position: absolute;
+    top : 51% ;
+    left: 49% ;
+    z-index: 1;
+}
+
+.main-containar{
+    position: relative;
+    background-color: white ;
+    border-radius: 0.625rem;
+    z-index: 3;
+    width: 400px;
+    height: 400px;
+}
+
+.profile{
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.pattern{
+    width: 100%;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+.main-containar h2{
+    text-align: center;
+    color: var(--Verydarkdesaturatedblue);
+    margin-top: 70px;  
+}
+
+.main-containar >p{
+    text-align: center;
+    color: var(--Darkgray);
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+span{
+    display: inline-block;
+    color: var(--Darkgrayishblue);
+    text-align: center;
+    margin-left: 7px;
+    font-weight: 2;
+    font-size:18px;
+}
+
+.one,.two,.three{
+    display: inline-block;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: center;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    margin-bottom: 2px;
+}
+
+
+
+.one p,.two p,.three p{
+    color:var(--Darkgray) ;
+    font-size: 10px;
+    margin-top: 2px;
+    letter-spacing: 2px;
+}
+
+@media (min-width:375px ){
+    .main-containar{
+        width: 350px;
+    }
+}
+
+.two p{
+    margin-left: 5px;
+}
